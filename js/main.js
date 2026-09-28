@@ -46,3 +46,46 @@ input.addEventListener('input',()=>{
 });
 document.getElementById('again').onclick=reset;
 reset();
+
+// ----- ryan quiz -----
+const quiz=document.getElementById('ryanQuiz'),quizResult=document.getElementById('quizResult'),quizSubmit=document.getElementById('quizSubmit'),quizReset=document.getElementById('quizReset');
+if(quiz&&quizResult&&quizSubmit&&quizReset){
+  quiz.addEventListener('click',e=>{
+    const btn=e.target.closest('.quiz-option');
+    if(!btn)return;
+    const q=btn.closest('.quiz-q');
+    if(!q)return;
+    q.querySelectorAll('.quiz-option').forEach(o=>{
+      o.setAttribute('aria-pressed','false');
+      o.classList.remove('correct','wrong');
+    });
+    btn.setAttribute('aria-pressed','true');
+  });
+
+  quizSubmit.onclick=()=>{
+    const qs=[...quiz.querySelectorAll('.quiz-q')];
+    let score=0,answered=0;
+    qs.forEach(q=>{
+      const selected=q.querySelector('.quiz-option[aria-pressed="true"]');
+      if(!selected)return;
+      answered++;
+      const ok=selected.dataset.correct==='true';
+      if(ok){score++;selected.classList.add('correct');}
+      else selected.classList.add('wrong');
+    });
+    if(answered<qs.length){
+      quizResult.textContent=`You answered ${answered}/${qs.length}. Pick one option for every question.`;
+      return;
+    }
+    const pct=Math.round(score/qs.length*100);
+    quizResult.textContent=`Score: ${score}/${qs.length} (${pct}%). ${score===qs.length?'Perfect! You know Ryan really well.':'Nice run! Try reset and go for a perfect score.'}`;
+  };
+
+  quizReset.onclick=()=>{
+    quiz.querySelectorAll('.quiz-option').forEach(o=>{
+      o.setAttribute('aria-pressed','false');
+      o.classList.remove('correct','wrong');
+    });
+    quizResult.textContent='Pick one answer for each question, then check your score.';
+  };
+}
