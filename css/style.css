@@ -17,6 +17,8 @@ a{color:var(--sky)}
 header{position:sticky;top:0;z-index:10;background:#000;border-bottom:4px solid var(--blue);padding:10px 8px}
 nav{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;max-width:900px;margin:0 auto}
 nav button{font-family:var(--head);font-size:1rem;font-weight:500;color:var(--dim);background:var(--panel);border:3px solid #26314f;padding:10px 16px;cursor:pointer}
+nav button[data-tab="minecraft"],
+nav button[data-tab="art"]{font-size:1.15rem;padding:12px 20px}
 nav button:hover{color:var(--white);border-color:var(--sky)}
 nav button[aria-selected="true"]{color:var(--white);border-color:var(--white);background:var(--blue);box-shadow:inset -4px -4px 0 #1b47b8,inset 4px 4px 0 #6f9bff}
 
