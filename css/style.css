@@ -97,5 +97,6 @@ h2{font-size:1.9rem;margin:52px 0 18px;color:var(--white);text-shadow:3px 3px 0 
 .btn:hover{background:#4a80ff}
 
 footer{text-align:center;padding:30px 20px 50px;color:var(--dim);border-top:4px solid #12296b}
+.signature{margin-top:8px;font-size:1.15rem;color:var(--white);letter-spacing:.04em;opacity:.9}
 @media(prefers-reduced-motion:no-preference){.hero h1{animation:drop .7s steps(6) both}@keyframes drop{from{transform:translateY(-30px);opacity:0}}}
 @keyframes snowfall{from{transform:translateY(-10%)}to{transform:translateY(35%)}}
