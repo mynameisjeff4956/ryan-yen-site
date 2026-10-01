@@ -8,6 +8,15 @@ body{background:var(--black);color:var(--white);font-family:var(--body);font-siz
   background-image:radial-gradient(var(--blue) 1px,transparent 1.5px),radial-gradient(#fff 1px,transparent 1.5px);
   background-size:97px 97px,151px 151px;background-position:13px 29px,71px 7px}
 body::before{content:"";position:fixed;inset:0;background:linear-gradient(#000 0,rgba(0,0,0,.86) 100%);pointer-events:none;z-index:0}
+body::after{content:"";position:fixed;inset:-20% 0 0 0;pointer-events:none;z-index:0;opacity:.75;
+  background-image:
+    radial-gradient(circle at 10% 10%,rgba(255,255,255,.95) 0 1.2px,transparent 1.3px),
+    radial-gradient(circle at 30% 30%,rgba(156,198,255,.9) 0 1.6px,transparent 1.7px),
+    radial-gradient(circle at 50% 15%,rgba(255,255,255,.9) 0 1.1px,transparent 1.2px),
+    radial-gradient(circle at 70% 40%,rgba(255,255,255,.92) 0 1.4px,transparent 1.5px),
+    radial-gradient(circle at 90% 25%,rgba(156,198,255,.85) 0 1.7px,transparent 1.8px);
+  background-size:240px 240px,320px 320px,210px 210px,280px 280px,360px 360px;
+  animation:snowfall 14s linear infinite}
 main,header,footer{position:relative;z-index:1}
 h1,h2,h3{font-family:var(--head);font-weight:600;line-height:1.2}
 a{color:var(--sky)}
@@ -89,3 +98,4 @@ h2{font-size:1.9rem;margin:52px 0 18px;color:var(--white);text-shadow:3px 3px 0 
 
 footer{text-align:center;padding:30px 20px 50px;color:var(--dim);border-top:4px solid #12296b}
 @media(prefers-reduced-motion:no-preference){.hero h1{animation:drop .7s steps(6) both}@keyframes drop{from{transform:translateY(-30px);opacity:0}}}
+@keyframes snowfall{from{transform:translateY(-10%)}to{transform:translateY(35%)}}
