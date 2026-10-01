@@ -97,6 +97,10 @@ h2{font-size:1.9rem;margin:52px 0 18px;color:var(--white);text-shadow:3px 3px 0 
 .btn:hover{background:#4a80ff}
 
 footer{text-align:center;padding:30px 20px 50px;color:var(--dim);border-top:4px solid #12296b}
-.signature{margin-top:8px;font-size:1.15rem;color:var(--white);letter-spacing:.04em;opacity:.9}
+.signature{margin-top:10px;display:inline-block;font-family:var(--head);font-size:2rem;font-weight:700;letter-spacing:.14em;
+  transform:rotate(-6deg) skewX(-6deg);
+  background:linear-gradient(135deg,#ffffff 0%,#9cc6ff 45%,#2f6bff 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:0 0 12px rgba(156,198,255,.35),2px 2px 0 rgba(18,41,107,.55)}
 @media(prefers-reduced-motion:no-preference){.hero h1{animation:drop .7s steps(6) both}@keyframes drop{from{transform:translateY(-30px);opacity:0}}}
 @keyframes snowfall{from{transform:translateY(-10%)}to{transform:translateY(35%)}}
