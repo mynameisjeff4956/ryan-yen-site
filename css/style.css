@@ -24,7 +24,7 @@ a{color:var(--sky)}
 
 /* hotbar nav */
 header{position:sticky;top:0;z-index:10;background:#000;border-bottom:4px solid var(--blue);padding:10px 8px}
-.brand-mini{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-family:var(--head);font-size:1.15rem;font-weight:700;color:var(--white);letter-spacing:.04em;text-shadow:2px 2px 0 #12296b}
+.brand-mini{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-family:var(--head);font-size:1.55rem;font-weight:700;color:var(--white);letter-spacing:.05em;text-shadow:2px 2px 0 #12296b}
 nav{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;max-width:900px;margin:0 auto}
 nav button{font-family:var(--head);font-size:1rem;font-weight:500;color:var(--dim);background:var(--panel);border:3px solid #26314f;padding:10px 16px;cursor:pointer}
 nav button[data-tab="minecraft"],
@@ -104,5 +104,6 @@ footer{text-align:center;padding:30px 20px 50px;color:var(--dim);border-top:4px 
   background:linear-gradient(135deg,#ffffff 0%,#9cc6ff 45%,#2f6bff 100%);
   -webkit-background-clip:text;background-clip:text;color:transparent;
   text-shadow:0 0 12px rgba(156,198,255,.35),2px 2px 0 rgba(18,41,107,.55)}
+.signature:hover{filter:brightness(1.12)}
 @media(prefers-reduced-motion:no-preference){.hero h1{animation:drop .7s steps(6) both}@keyframes drop{from{transform:translateY(-30px);opacity:0}}}
 @keyframes snowfall{from{transform:translateY(-10%)}to{transform:translateY(35%)}}
