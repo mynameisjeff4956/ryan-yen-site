@@ -1,6 +1,6 @@
 :root{
   --black:#000;--panel:#0a1020;--blue:#2f6bff;--sky:#9cc6ff;--white:#fff;--dim:#a9b6d3;
-  --head:"Pixelify Sans","Courier New",monospace;--body:"Pixelify Sans","Courier New",monospace;
+  --head:"FORT AVENUE","Fort Avenue","Pixelify Sans","Courier New",monospace;--body:"FORT AVENUE","Fort Avenue","Pixelify Sans","Courier New",monospace;
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
