@@ -16,7 +16,14 @@ show(location.hash.slice(1)||'home');
 const texts=[
  "I was born in Taiwan and now I live in Vancouver. I like badminton, games and building cool things with AI.",
  "Every big win starts with a small habit. Keep practicing, keep playing, and never stop building.",
- "The bed is safe, the bridge is built, and the last fight is about to begin. Stay calm and swing."
+ "The bed is safe, the bridge is built, and the last fight is about to begin. Stay calm and swing.",
+ "From Taiwan to Vancouver, I learned that new places feel better when you stay curious and keep moving.",
+ "Badminton helps me stay quick on my feet, focused under pressure, and ready for every next point.",
+ "In Bedwars, timing and teamwork matter just as much as aim, so I try to play smart every round.",
+ "I enjoy editing videos because a good story can turn simple clips into something fun to watch.",
+ "Typing faster is cool, but typing accurately is what really helps when I am building projects.",
+ "When I practice a little every day, my skills in games, sports, and coding all improve together.",
+ "I like creating with AI tools because they help me test ideas quickly and learn by making things."
 ];
 const prompt_=document.getElementById('prompt'),input=document.getElementById('typeIn'),
       wpm=document.getElementById('wpm'),acc=document.getElementById('acc');
